@@ -1,0 +1,85 @@
+/* h1{
+    color:blue;
+    font-size:40px;
+}
+body{
+    background-color:lightblue;
+}
+p{
+    font-family:verdana;
+    font-size:20px;
+}
+div{
+    text-align:center;
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+button{
+    background-color:green;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+.container{
+   baground-color:lightgray;
+   width: 80%;
+    margin:100px auto;
+    padding:120px;
+    border-radius:15px;
+}
+input{
+
+    padding:12px;
+    border:1px solid grey;
+    border-radius:5px;
+} */
+
+
+/* body{
+    margin:10;
+    font-family:Arial;
+}
+nav{
+    background-color: navy;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.hero{
+    padding:60px 20px;
+}
+.links a{
+    color:white;
+    text-decoration: none;
+    margin: 20px;
+}
+.cards{
+    background-color:darkblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:0c4px 8px rgba(0,0,0,0.1);
+    flex:1;
+}
+@media(max-width:600px){
+    nav{
+        flex-direction:column;
+        text-align: center;
+
+    }
+    links{
+        display:flex;
+        flex-direction:coloumn;
+    }
+    .container{
+        flex-direction:coloumn;
+    }
+    .hero{
+        padding: 30px 10px;
+    }
+} */
