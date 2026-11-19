@@ -1,0 +1,74 @@
+college=# select course, max(marks) from student group by course;
+ course | max
+--------+-----
+ MCA    |  97
+ BCA    |  97
+(2 rows)
+
+
+college=# select course, min(marks) from student group by course;
+ course | min
+--------+-----
+ MCA    |  97
+ BCA    |  97
+(2 rows)
+
+
+college=# create table student_card(
+college(# card id serial primary key,
+college(# );
+ERROR:  syntax error at or near "serial"
+LINE 2: card id serial primary key,
+                ^
+college=# create table student_card(
+college(# card_id serial primary key,
+college(# card_number varchar(50),
+college(# id int unique references students(id),
+college(# );
+ERROR:  syntax error at or near ")"
+LINE 5: );
+        ^
+college=# create table student_card(
+college(# card_id serial primary key,
+college(# card_number varchar(50),
+college(# id int unique references student(id),
+college(# );
+ERROR:  syntax error at or near ")"
+LINE 5: );
+        ^
+college=# create table student_card(
+college(# card_id serial primary key,
+college(# card_number varchar(50),
+college(# id int unique references students(id)
+college(# );
+ERROR:  relation "students" does not exist
+college=# create table student_card(
+college(# card_id serial primary key,
+college(# card_number varchar(50),
+college(# id int unique references student(id)
+college(# );
+CREATE TABLE
+college=# insert into student_card(card_number,id)values('card101',1),
+college-# ('card102',3);
+ERROR:  insert or update on table "student_card" violates foreign key constraint "student_card_id_fkey"
+DETAIL:  Key (id)=(1) is not present in table "student".
+college=# create table department(
+college(# department_id serial primary key,
+college(# department_name varchar(100));
+CREATE TABLE
+college=# insert into department (departments_name)
+college-# values
+college-# ('cse'),
+college-# ('mech')
+college-# ('aiml');
+ERROR:  syntax error at or near "("
+LINE 5: ('aiml');
+        ^
+college=# insert into department (departments_name)
+college-# values
+college-# ('cse'),
+college-# ('mech'),
+college-# ;
+ERROR:  syntax error at or near ";"
+LINE 5: ;
+        ^

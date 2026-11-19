@@ -10,6 +10,9 @@
 // console.log(typeof address);
 
 
-function changeText(){
-    document.getElementById("title").
-}
+// function changeBackground() {
+
+//     function changeBackground() {
+//     document.body.style.backgroundColor = "lightblue";
+// }  
+// }
